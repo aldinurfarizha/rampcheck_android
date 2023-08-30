@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">rampcheck</string>
+    <string-array name="status_administrasi">
+        <item>-- Pilih --</item>
+        <item>Ada, Berlaku</item>
+        <item>Tidak Berlaku</item>
+        <item>Tidak Ada</item>
+        <item>Tidak Sesuai Fisik</item>
+    </string-array>
+    <string-array name="status_sim">
+        <item>-- Pilih --</item>
+        <item>A UMUM</item>
+        <item>B1 UMUM</item>
+        <item>B2 UMUM</item>
+        <item>SIM Tidak Sesuai</item>
+    </string-array>
 </resources>
