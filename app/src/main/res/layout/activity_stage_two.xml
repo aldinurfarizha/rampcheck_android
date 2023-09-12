@@ -38,7 +38,7 @@
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"
-                    android:text="I. Unsur Administrasi"
+                    android:text="II. Unsur Teknis Utama"
                     android:fontFamily="@font/medium"
                     android:textColor="@color/black">
                 </TextView>
@@ -48,12 +48,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. Kartu Uji STUK">
+                android:text="1. (a) Lampu Utama (Dekat)">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/kartu_uji_stuk"
+                android:id="@+id/lampu_utama_dekat"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -64,12 +64,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. KP Reguler">
+                android:text="(b)Lampu Utama (Jauh)">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/kp_reguler"
+                android:id="@+id/lampu_utama_jauh"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -80,12 +80,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. KP Cadangan">
+                android:text="2. (a) Lampu Sein (Depan)">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/kp_cadangan"
+                android:id="@+id/lampu_sein_depan"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -96,12 +96,108 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. SIM Pengemudi">
+                android:text="(b) Lampu Sein (Belakang)">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/sim_pengemudi"
+                android:id="@+id/lampu_sein_belakang"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Lampu Rem">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lampu_rem"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Lampu Mundur">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lampu_mundur"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Rem Utama">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rem_utama"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Rem Parkir">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rem_parkir"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Kondisi Kaca Depan">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kondisi_kaca_depan"
+                android:entries="@array/status_sim"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedborder"
+                android:padding="15dp">
+            </Spinner>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Pintu Utama">
+            </TextView>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pintu_utama"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
