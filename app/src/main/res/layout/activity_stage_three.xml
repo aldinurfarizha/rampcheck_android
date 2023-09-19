@@ -38,7 +38,7 @@
                     android:textSize="18sp"
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"
-                    android:text="II. Unsur Teknis Utama"
+                    android:text="III. Unsur Teknis Penunjang"
                     android:fontFamily="@font/medium"
                     android:textColor="@color/black">
                 </TextView>
@@ -48,12 +48,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. (a) Lampu Utama (Dekat)">
+                android:text="1. Lampu Posisi Depan">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_utama_dekat"
+                android:id="@+id/lampu_posisi_depan"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -64,12 +64,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(b)Lampu Utama (Jauh)">
+                android:text="2. Lampu Posisi belakang">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_utama_jauh"
+                android:id="@+id/lampu_posisi_belakang"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -80,12 +80,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2. (a) Lampu Sein (Depan)">
+                android:text="3. Kaca Spion">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_sein_depan"
+                android:id="@+id/kaca_spion"
                 android:entries="@array/status_administrasi"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -96,12 +96,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(b) Lampu Sein (Belakang)">
+                android:text="4. Klakson">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_sein_belakang"
+                android:id="@+id/klakson"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -112,12 +112,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. Lampu Rem">
+                android:text="5. Lantai dan Tangga">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_rem"
+                android:id="@+id/lantai_dan_tangga"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -128,12 +128,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. Lampu Mundur">
+                android:text="6. Jln Tempat Duduk Penumpang">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lampu_mundur"
+                android:id="@+id/jln_tempat_duduk_penumpang"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -144,12 +144,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5. Rem Utama">
+                android:text="7. Ban Cadangan">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rem_utama"
+                android:id="@+id/ban_cadangan"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -160,12 +160,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6. Rem Parkir">
+                android:text="8. Segitiga Pengaman">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/rem_parkir"
+                android:id="@+id/segitiga_pengaman"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -176,12 +176,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7. Kondisi Kaca Depan">
+                android:text="9. Dongkrak">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/kondisi_kaca_depan"
+                android:id="@+id/dongkrak"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -192,12 +192,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8. Pintu Utama">
+                android:text="10. Pembuka Roda">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/pintu_utama"
+                android:id="@+id/pembuka_roda"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
@@ -208,124 +208,12 @@
                 android:fontFamily="@font/medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="9. Kondisi Ban Depan">
+                android:text="11. Lampu Senter">
             </TextView>
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/kondisi_ban_depan"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10. Kondisi Ban Belakang">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/kondisi_ban_belakang"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="11. Sabuk Keselamatan Pengemudi">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/sabuk_keselamatan_pengemudi"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12. Pengukur Kecepatan">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/pengukur_kecepatan"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="13. Penghapus Kaca">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/penghapus_kaca"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="14. Pintu Darurat">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/pintu_darurat"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15. Jendela Darurat">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/jendela_darurat"
-                android:entries="@array/status_sim"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/roundedborder"
-                android:padding="15dp">
-            </Spinner>
-            <TextView
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/medium"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="16. Alat Pemukul/Pemecah Kaca">
-            </TextView>
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/alat_pemukul_pemecah_kaca"
+                android:id="@+id/lampu_senter"
                 android:entries="@array/status_sim"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
