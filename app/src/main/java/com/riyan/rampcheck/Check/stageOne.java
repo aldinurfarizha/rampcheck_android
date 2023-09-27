@@ -1,14 +1,17 @@
-package com.riyan.rampcheck;
+package com.riyan.rampcheck.Check;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class StageThree extends AppCompatActivity {
+import com.riyan.rampcheck.R;
+
+public class stageOne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stage_three);
+        setContentView(R.layout.activity_stage_one);
+
     }
 }

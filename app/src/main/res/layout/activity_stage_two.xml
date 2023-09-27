@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".check.stageOne">
+    tools:context=".Check.stageOne">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_utama_dekat"
-                android:entries="@array/status_administrasi"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -70,7 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_utama_jauh"
-                android:entries="@array/status_administrasi"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_sein_depan"
-                android:entries="@array/status_administrasi"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_sein_belakang"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -118,7 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_rem"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -134,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/lampu_mundur"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_lampu"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rem_utama"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_pengereman"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -166,7 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/rem_parkir"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_pengereman"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -182,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/kondisi_kaca_depan"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_kondisi_kaca_depan"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -198,7 +198,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/pintu_utama"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_pintu_utama"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -214,7 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/kondisi_ban_depan"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_kondisi_ban"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -230,7 +230,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/kondisi_ban_belakang"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_kondisi_ban"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -246,7 +246,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/sabuk_keselamatan_pengemudi"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_perlengkapan"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -262,7 +262,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/pengukur_kecepatan"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_perlengkapan"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -278,7 +278,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/penghapus_kaca"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_perlengkapan"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -294,7 +294,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/pintu_darurat"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_tanggap_darurat"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -310,7 +310,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/jendela_darurat"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_tanggap_darurat"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">
@@ -326,7 +326,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/alat_pemukul_pemecah_kaca"
-                android:entries="@array/status_sim"
+                android:entries="@array/status_tanggap_darurat"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/roundedborder"
                 android:padding="15dp">

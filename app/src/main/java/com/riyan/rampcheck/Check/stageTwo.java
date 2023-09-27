@@ -1,4 +1,4 @@
-package com.riyan.rampcheck.check;
+package com.riyan.rampcheck.Check;
 
 import androidx.appcompat.app.AppCompatActivity;
 

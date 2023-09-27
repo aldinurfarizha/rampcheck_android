@@ -14,4 +14,71 @@
         <item>B2 UMUM</item>
         <item>SIM Tidak Sesuai</item>
     </string-array>
+    <string-array name="status_lampu">
+        <item>-- Pilih --</item>
+        <item>Semua Menyala</item>
+        <item>Kanan Tidak Menyala</item>
+        <item>Kiri Tidak Menyala</item>
+    </string-array>
+    <string-array name="status_pengereman">
+        <item>-- Pilih --</item>
+        <item>Berfungsi</item>
+        <item>Tidak Berfungsi</item>
+    </string-array>
+    <string-array name="status_kondisi_kaca_depan">
+        <item>-- Pilih --</item>
+        <item>Baik</item>
+        <item>Buruk</item>
+    </string-array>
+    <string-array name="status_pintu_utama">
+        <item>-- Pilih --</item>
+        <item>Semua Berfungsi</item>
+        <item>Depan Tidak Berfungsi</item>
+        <item>Belakang Tidak Berfungsi</item>
+    </string-array>
+    <string-array name="status_kondisi_ban">
+        <item>-- Pilih --</item>
+        <item>Semua Laik</item>
+        <item>Kanan Tidak Laik</item>
+        <item>Kiri Laik</item>
+    </string-array>
+    <string-array name="status_perlengkapan">
+        <item>-- Pilih --</item>
+        <item>Ada dan Fungsi</item>
+        <item>Tidak Berfungsi</item>
+        <item>Tidak Ada</item>
+    </string-array>
+    <string-array name="status_tanggap_darurat">
+        <item>-- Pilih --</item>
+        <item>Ada</item>
+        <item>Tidak Ada</item>
+    </string-array>
+    <string-array name="status_kaca_spion">
+        <item>-- Pilih --</item>
+        <item>Sesuai</item>
+        <item>Tidak Sesuai</item>
+    </string-array>
+    <string-array name="status_klakson">
+        <item>-- Pilih --</item>
+        <item>Ada</item>
+        <item>Tidak Berfungsi</item>
+        <item>Tidak Ada</item>
+    </string-array>
+    <string-array name="status_lantai_dan_tangga">
+        <item>-- Pilih --</item>
+        <item>Baik</item>
+        <item>Keropos/Berlubang</item>
+    </string-array>
+    <string-array name="status_ban_cadangan">
+        <item>-- Pilih --</item>
+        <item>Ada dan Laik</item>
+        <item>Tidak Laik</item>
+        <item>Tidak Ada</item>
+    </string-array>
+    <string-array name="status_lampu_senter">
+        <item>-- Pilih --</item>
+        <item>Ada</item>
+        <item>Tidak Berfungsi</item>
+        <item>Tidak Ada</item>
+    </string-array>
 </resources>
