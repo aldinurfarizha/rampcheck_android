@@ -36,105 +36,114 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="16dp"
         style="@style/Widget.MaterialComponents.Button"/>
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="8dp"
         android:layout_below="@id/title"
-        app:cardElevation="8dp"
-        android:layout_margin="20dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
         <LinearLayout
-            android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:orientation="vertical">
-           <LinearLayout
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:weightSum="10"
-               android:orientation="horizontal">
-               <TextView
-                   android:layout_weight="5"
-                   android:fontFamily="@font/regular"
-                   android:layout_width="0dp"
-                   android:layout_height="wrap_content"
-                   android:text="Nomor Plat">
-               </TextView>
-               <TextView
-                   android:textAlignment="textEnd"
-                   android:layout_weight="5"
-                   android:id="@+id/nomor_plat"
-                   android:textColor="@color/black"
-                   android:layout_width="0dp"
-                   android:layout_height="wrap_content"
-                   android:text="E1234YAH">
-               </TextView>
-           </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="10"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10">
+
                 <TextView
-                    android:layout_weight="5"
-                    android:fontFamily="@font/regular"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Nama PO">
-                </TextView>
-                <TextView
-                    android:textAlignment="textEnd"
                     android:layout_weight="5"
+                    android:fontFamily="@font/regular"
+                    android:text="Nomor Plat"></TextView>
+
+                <TextView
+                    android:id="@+id/nomor_plat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="E1234YAH"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/regular"
+                    android:text="Nama PO"></TextView>
+
+                <TextView
                     android:id="@+id/tanggal_lahir"
-                    android:textColor="@color/black"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Sehati">
-                </TextView>
+                    android:layout_weight="5"
+                    android:text="Sehati"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="10"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10">
+
                 <TextView
-                    android:layout_weight="5"
-                    android:fontFamily="@font/regular"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Jenis Angkutan">
-                </TextView>
-                <TextView
-                    android:textAlignment="textEnd"
                     android:layout_weight="5"
+                    android:fontFamily="@font/regular"
+                    android:text="Jenis Angkutan"></TextView>
+
+                <TextView
                     android:id="@+id/jenis_angkutan"
-                    android:textColor="@color/black"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="AKAP">
-                </TextView>
+                    android:layout_weight="5"
+                    android:text="AKAP"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"></TextView>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:weightSum="10"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10">
+
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:fontFamily="@font/regular"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Trayek">
-                </TextView>
+                    android:text="Trayek"></TextView>
+
                 <TextView
-                    android:textAlignment="textEnd"
-                    android:layout_weight="5"
                     android:id="@+id/trayek"
-                    android:textColor="@color/black"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Kuningan - Sumatera">
-                </TextView>
+                    android:layout_weight="5"
+                    android:text="Kuningan - Sumatera"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"></TextView>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
