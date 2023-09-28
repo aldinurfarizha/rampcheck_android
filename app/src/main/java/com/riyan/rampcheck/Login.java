@@ -56,7 +56,13 @@ public static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 7;
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Dashboard.class));
+                try {
+                    login();
+                } catch (UnsupportedEncodingException e) {
+                    throw new RuntimeException(e);
+                } catch (NoSuchAlgorithmException e) {
+                    throw new RuntimeException(e);
+                }
             }
         });
     }

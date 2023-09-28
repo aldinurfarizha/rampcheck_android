@@ -413,7 +413,14 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="8dp">
+            app:cardElevation="8dp"
+            tools:ignore="WebViewLayout">
+            <WebView
+                android:id="@+id/rampcheckweb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="WebViewLayout">
+            </WebView>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>
