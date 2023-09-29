@@ -18,11 +18,14 @@ import com.riyan.rampcheck.Util.URLs;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
+
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class Dashboard extends AppCompatActivity {
-    CardView scanqr, inventaris;
-    TextView total_inventaris,total_perolehan,total_penghapusan, nama;
+    CardView scanqr, data_scan;
+    TextView total_rampcheck,total_laik_jalan,total_peringatan,total_dilarang_operasional,total_dilarang_operasional_dan_tilang, nama;
     ImageView logout;
     Credential credential;
     @Override
@@ -31,10 +34,12 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
         scanqr=(CardView) findViewById(R.id.btn_qrcode);
         nama=(TextView)findViewById(R.id.nama);
-        inventaris=(CardView)findViewById(R.id.btn_data);
-        total_inventaris=(TextView)findViewById(R.id.total_inventaris);
-        total_penghapusan=(TextView)findViewById(R.id.total_penghapusan_aset);
-        total_perolehan=(TextView)findViewById(R.id.total_inventaris_baru);
+        data_scan=(CardView)findViewById(R.id.btn_data);
+        total_rampcheck=(TextView)findViewById(R.id.total_rampcheck);
+        total_laik_jalan=(TextView)findViewById(R.id.total_laik_jalan);
+        total_peringatan=(TextView)findViewById(R.id.total_peringatan);
+        total_dilarang_operasional=(TextView)findViewById(R.id.total_dilarang_operasional);
+        total_dilarang_operasional_dan_tilang=(TextView)findViewById(R.id.total_tilang_dan_dilarang_operasional);
         logout=(ImageView)findViewById(R.id.logout);
         credential = SharedPrefManager.getInstance(this).get();
         nama.setText(credential.getNama());
@@ -63,7 +68,7 @@ public class Dashboard extends AppCompatActivity {
                 //startActivity(new Intent(getApplicationContext(), DetailInventaris.class));
             }
         });
-        inventaris.setOnClickListener(new View.OnClickListener() {
+        data_scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), Data.class));
@@ -80,19 +85,34 @@ public class Dashboard extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         try {
                             JSONObject arr =response.getJSONObject("data");
-                            total_inventaris.setText(arr.getString("res"));
-                            total_perolehan.setText(arr.getString("satu"));
-                            total_penghapusan.setText(arr.getString("dua"));
-                            total_penghapusan.setText(arr.getString("tiga"));
+                            total_rampcheck.setText(arr.getString("res"));
+                            total_laik_jalan.setText(arr.getString("satu"));
+                            total_peringatan.setText(arr.getString("dua"));
+                            total_dilarang_operasional.setText(arr.getString("tiga"));
+                            total_dilarang_operasional_dan_tilang.setText(arr.getString("empat"));
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
                     }
                     @Override
                     public void onError(ANError error) {
-
+                        koneksi_ulang();
                     }
                 });
 
+    }
+    public void koneksi_ulang(){
+        new SweetAlertDialog(Dashboard.this, SweetAlertDialog.ERROR_TYPE)
+                .setContentText("Koneksi Bermasalah !")
+                .setConfirmText("Ulangi")
+                .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sweetAlertDialog) {
+                        AndroidNetworking.cancelAll();
+                        getData();
+                        sweetAlertDialog.cancel();
+                    }
+                })
+                .show();
     }
 }

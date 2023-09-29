@@ -12,4 +12,5 @@
     <color name="trimary">#FD841F</color>
     <color name="danger">#dc3545</color>
     <color name="success">#5cb85c</color>
+    <color name="grey">#EAE8E8</color>
 </resources>
