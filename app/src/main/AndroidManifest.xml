@@ -23,6 +23,9 @@
             android:name=".Data"
             android:exported="false" />
         <activity
+            android:name=".Check.Detail"
+            android:exported="false" />
+        <activity
             android:name=".Check.SelectDriver"
             android:exported="false" />
         <activity

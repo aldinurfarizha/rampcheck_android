@@ -2,7 +2,7 @@ package com.riyan.rampcheck.Util;
 
 public class URLs {
 
-  public static final String SERVER_ADDRESS="http://192.168.1.105/";
+  public static final String SERVER_ADDRESS="http://192.168.222.100/";
   public static final String APP_NAME="rampcheck/";
   public static final String API_PATH="api/";
   private static final String FULL_API_URL = SERVER_ADDRESS+APP_NAME+API_PATH;
