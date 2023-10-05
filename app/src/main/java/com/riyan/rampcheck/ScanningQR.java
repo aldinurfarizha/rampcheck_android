@@ -34,7 +34,8 @@ public class ScanningQR extends AppCompatActivity {
                         Toasty.success(getApplicationContext(), "Berhasil mendapatkan Barcode", Toast.LENGTH_SHORT, true).show();
                         Intent intent = new Intent(ScanningQR.this, StagePrepare.class);
                         intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-                        intent.putExtra("id_bus", result.getText());
+                        //intent.putExtra("id_bus", result.getText());
+                        intent.putExtra("id_bus", "1234W18");
                         startActivity(intent);
                         finish();
                     }

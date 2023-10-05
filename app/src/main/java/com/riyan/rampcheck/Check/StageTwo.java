@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.riyan.rampcheck.R;
 
-public class stageTwo extends AppCompatActivity {
+public class StageTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

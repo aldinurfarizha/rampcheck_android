@@ -39,14 +39,14 @@
             android:name=".Check.StageThree"
             android:exported="false" />
         <activity
-            android:name=".Check.stageTwo"
+            android:name=".Check.StageTwo"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Check.stageOne"
+            android:name=".Check.StageOne"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

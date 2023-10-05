@@ -35,18 +35,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7.75"
+        android:layout_weight="8"
         android:id="@+id/list_data">
     </androidx.recyclerview.widget.RecyclerView>
-    <Button
-        android:id="@+id/button_lanjut"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:text="Lanjut >"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="16dp"
-        style="@style/Widget.MaterialComponents.Button"/>
 </LinearLayout>
