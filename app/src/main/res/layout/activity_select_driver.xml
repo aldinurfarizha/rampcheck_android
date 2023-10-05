@@ -7,17 +7,46 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".Check.StagePrepare">
-    <TextView
-        android:layout_below="@+id/bus"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pilih Driver"
-        android:id="@+id/title"
-        android:textColor="@color/black"
+        android:layout_height="0dp"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/medium"
-        android:gravity="center"
-        android:textSize="17sp">
-    </TextView>
-
+        android:orientation="vertical"
+        android:layout_weight="2">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/bus"
+            android:src="@drawable/driver">
+        </ImageView>
+        <TextView
+            android:layout_below="@+id/bus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Driver"
+            android:id="@+id/title"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:textSize="17sp">
+        </TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.75"
+        android:id="@+id/list_data">
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/button_lanjut"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:text="Lanjut >"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button"/>
 </LinearLayout>

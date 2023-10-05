@@ -26,7 +26,7 @@
         android:textSize="17sp">
     </TextView>
     <Button
-        android:id="@+id/buttonLanjut"
+        android:id="@+id/button_lanjut"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_alignParentBottom="true"
@@ -72,7 +72,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="E1234YAH"
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"></TextView>
             </LinearLayout>
@@ -91,11 +90,10 @@
                     android:text="Nama PO"></TextView>
 
                 <TextView
-                    android:id="@+id/tanggal_lahir"
+                    android:id="@+id/nama_po"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="Sehati"
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"></TextView>
             </LinearLayout>
@@ -118,7 +116,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="AKAP"
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"></TextView>
             </LinearLayout>
@@ -141,7 +138,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
-                    android:text="Kuningan - Sumatera"
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"></TextView>
             </LinearLayout>

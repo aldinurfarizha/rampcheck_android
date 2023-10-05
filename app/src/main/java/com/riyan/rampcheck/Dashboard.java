@@ -65,7 +65,6 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ScanningQR.class));
-                //startActivity(new Intent(getApplicationContext(), DetailInventaris.class));
             }
         });
         data_scan.setOnClickListener(new View.OnClickListener() {
