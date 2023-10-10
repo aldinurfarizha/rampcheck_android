@@ -48,8 +48,8 @@ public class StageTwo extends AppCompatActivity {
                     intents.putExtra("id_sopir",intent.getExtras().getString("id_sopir"));
                     intents.putExtra("kartu_uji_stuk",intent.getExtras().getString("kartu_uji_stuk"));
                     intents.putExtra("kp_reguler",intent.getExtras().getString("kp_reguler"));
-                    intents.putExtra("kp_cadangan",intent.getExtras().getString("id_sopir"));
-                    intents.putExtra("sim_pengemudi",intent.getExtras().getString("id_sopir"));
+                    intents.putExtra("kp_cadangan",intent.getExtras().getString("kp_cadangan"));
+                    intents.putExtra("sim_pengemudi",intent.getExtras().getString("sim_pengemudi"));
                     intents.putExtra("lampu_utama_dekat", lampuUtamaDekat.getSelectedItem().toString());
                     intents.putExtra("lampu_utama_jauh", lampuUtamaJauh.getSelectedItem().toString());
                     intents.putExtra("lampu_sein_depan", lampuSeinDepan.getSelectedItem().toString());
