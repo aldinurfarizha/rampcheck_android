@@ -23,19 +23,20 @@ public class StageOne extends AppCompatActivity {
         kpCadangan = findViewById(R.id.kp_cadangan);
         simPengemudi = findViewById(R.id.sim_pengemudi);
         btnLanjut = findViewById(R.id.buttonLanjut);
+        Intent intent = getIntent();
         btnLanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(check()){
-                    Intent intent = new Intent(StageOne.this, StageTwo.class);
-                    intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.putExtra("id_bus", intent.getExtras().getString("id_bus"));
-                    intent.putExtra("id_sopir",intent.getExtras().getString("id_sopir"));
-                    intent.putExtra("kartu_uji_stuk",kartuUjiStuk.getSelectedItem().toString());
-                    intent.putExtra("kp_reguler",kpReguler.getSelectedItem().toString());
-                    intent.putExtra("kp_cadangan",kpCadangan.getSelectedItem().toString());
-                    intent.putExtra("sim_pengemudi",simPengemudi.getSelectedItem().toString());
-                    startActivity(intent);
+                    Intent intents = new Intent(StageOne.this, StageTwo.class);
+                    intents.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
+                    intents.putExtra("id_bus", intent.getExtras().getString("id_bus"));
+                    intents.putExtra("id_sopir",intent.getExtras().getString("id_sopir"));
+                    intents.putExtra("kartu_uji_stuk",kartuUjiStuk.getSelectedItem().toString());
+                    intents.putExtra("kp_reguler",kpReguler.getSelectedItem().toString());
+                    intents.putExtra("kp_cadangan",kpCadangan.getSelectedItem().toString());
+                    intents.putExtra("sim_pengemudi",simPengemudi.getSelectedItem().toString());
+                    startActivity(intents);
                 }
             }
         });

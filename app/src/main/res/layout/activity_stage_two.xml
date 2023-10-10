@@ -332,7 +332,7 @@
                 android:padding="15dp">
             </Spinner>
             <Button
-                android:id="@+id/buttonLanjut"
+                android:id="@+id/btn_lanjut"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:text="Lanjut >"
