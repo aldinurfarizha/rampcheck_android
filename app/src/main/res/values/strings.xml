@@ -19,6 +19,7 @@
         <item>Semua Menyala</item>
         <item>Kanan Tidak Menyala</item>
         <item>Kiri Tidak Menyala</item>
+        <item>Kiri dan Kanan Tidak Menyala</item>
     </string-array>
     <string-array name="status_pengereman">
         <item>-- Pilih --</item>
@@ -35,12 +36,14 @@
         <item>Semua Berfungsi</item>
         <item>Depan Tidak Berfungsi</item>
         <item>Belakang Tidak Berfungsi</item>
+        <item>Depan dan Belakang Tidak Berfungsi</item>
     </string-array>
     <string-array name="status_kondisi_ban">
         <item>-- Pilih --</item>
         <item>Semua Laik</item>
         <item>Kanan Tidak Laik</item>
-        <item>Kiri Laik</item>
+        <item>Kiri Tidak Laik</item>
+        <item>Kiri dan Kanan Tidak Laik</item>
     </string-array>
     <string-array name="status_perlengkapan">
         <item>-- Pilih --</item>

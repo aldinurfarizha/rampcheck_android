@@ -65,11 +65,11 @@ public class Dashboard extends AppCompatActivity {
         scanqr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, StagePrepare.class);
-                intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.putExtra("id_bus", "1234W18");
-                startActivity(intent);
-                //startActivity(new Intent(getApplicationContext(), ScanningQR.class));
+                //Intent intent = new Intent(Dashboard.this, StagePrepare.class);
+                //intent.setFlags(intent.FLAG_ACTIVITY_NEW_TASK);
+                //intent.putExtra("id_bus", "1234W18");
+                //startActivity(intent);
+                startActivity(new Intent(getApplicationContext(), ScanningQR.class));
             }
         });
         data_scan.setOnClickListener(new View.OnClickListener() {

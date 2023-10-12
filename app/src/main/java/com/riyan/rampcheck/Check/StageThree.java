@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
@@ -107,7 +108,7 @@ public class StageThree extends AppCompatActivity {
         credential = SharedPrefManager.getInstance(this).get();
         final String id_user= credential.getId_user();
         dialog.show();
-        AndroidNetworking.post(URLs.WEB_HOOK)
+        AndroidNetworking.post(URLs.INSERT_RAMPCHECK)
                 .addBodyParameter("id_user", id_user)
                 .addBodyParameter("id_bus", id_bus)
                 .addBodyParameter("id_sopir", id_sopir)
@@ -160,17 +161,13 @@ public class StageThree extends AppCompatActivity {
                     }
                     @Override
                     public void onError(ANError error) {
-                        dialog.dismiss();
-                        if (error.getErrorCode() != 0) {
-                            try {
-                                JSONObject response = new JSONObject(error.getErrorBody());
-                                Toasty.error(getApplicationContext(), response.getString("messages"), Toast.LENGTH_SHORT, true).show();
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        } else {
-                            koneksi_ulang();
+                        try {
+                            JSONObject response = new JSONObject(error.getErrorBody());
+                            Toasty.error(getApplicationContext(), response.getString("messages"), Toast.LENGTH_SHORT, true).show();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
+                        Log.e("error insert", error.toString());
 
                     }
                 });
